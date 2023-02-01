@@ -33,56 +33,24 @@ def send_mail(recipient: str, sender: str, subject: str, body: str) -> bool:
 
 def get_inbox(recipient: str) -> None:
     """TODO: fill out this docstring (using the send_mail docstring as a guide)
-    Sends a GET request to the server to the /mail/inbox/{recipient} endpoint
-    The JSON body of the request specifies the recipient whose inbox we want to see
-
-    Args:
-        recipient (str): the recipient whose inbox we want to get
-
-    Returns:
-        None 
     """
     response = requests.get(f'{SERVER}/mail/inbox/{recipient}')
     pprint.pprint(response.json())
 
 def get_sent(sender: str) -> None:
     """TODO: fill out this docstring (using the send_mail docstring as a guide)
-    Sends a GET request to the server to the /mail/sent/{sender} endpoint.
-    The JSON body of the request specifies the sender whose sent mail we want to see.
-    
-    Args:
-        sender (str): the sender whose sent mail we want to get
-
-    Returns:
-        None
     """
     response = requests.get(f'{SERVER}/mail/sent/{sender}')
     pprint.pprint(response.json())
 
 def get_mail(mail_id: str) -> None:
     """TODO: fill out this docstring (using the send_mail docstring as a guide)
-    Sends a GET request to the sever to the /mail/{mail_id} endpoint.
-    The JSON body of the request specifies the id of the piece of mail we want to see.
-
-    Args:
-        mail_id (str): the id of the piece of mail we want to get
-
-    Returns:
-        None
     """
     response = requests.get(f'{SERVER}/mail/{mail_id}')
     pprint.pprint(response.json())
 
 def delete_mail(mail_id: str) -> None:
     """TODO: fill out this docstring (using the send_mail docstring as a guide)
-    Sends a DELETE request to the server to the /mail/{mail_id} endpoint.
-    The JSON body of the request specified the id of the piece of mail we want to delete.
-
-    Args:
-        mail_id (str): the id of the piece of mail we want to delete
-
-    Returns:
-        None
     """
     response = requests.delete(f'{SERVER}/mail/{mail_id}')
     pprint.pprint(response.json())
