@@ -12,7 +12,7 @@ Answer for Question 1: One reason for the scalabillity of RESTful APIs is that t
 
 
 Question 2: According to the definition of "resources" provided in the AWS article above, what are the resources the mail server is providing to the client?
-Answer for Question 2: Resources are the information that the server provides to clients upon requests. In our implementation of a mail server, the resources are the mail messages.
+Answer for Question 2: Resources are the information that the server provides to clients upon requests. In our implementation of a mail server, the resources are the jsonified dictionaries and lists of dictionaries which represent mail entries and lists of mail entries.
 
 
 Question 3: What is one common REST method not used in our mail server? How could we extend our mail server to use this method?

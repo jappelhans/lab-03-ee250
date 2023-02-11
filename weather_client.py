@@ -20,6 +20,8 @@ def KtoF(K):
 
 
 # TODO: try connecting to a another API! e.g. reddit (https://www.reddit.com/dev/api/)
+# Please see joke_client.py for the extra credit API connection
+
 
 def main():
     city = "Las Vegas"
