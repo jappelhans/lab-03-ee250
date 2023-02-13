@@ -28,7 +28,7 @@ def save_mail(mail: List[Dict[str, str]]) -> None:
     Writes the mail list of dictionaries to the json file to save it
 
     Args:
-        List: list of mail entry dictionaries
+        List: list of dictionaries representing the mail entries
 
     Returns:
         None

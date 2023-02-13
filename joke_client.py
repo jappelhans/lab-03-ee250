@@ -17,8 +17,8 @@ def main():
     for i in range(0,5):
         joke = get_joke()
         print("Category: ", joke["type"])
-        print("Setup: ", joke["setup"])
-        print("Punchline: ", joke["punchline"])
+        print("Setup:    ", joke["setup"])
+        print("Punchline:", joke["punchline"])
         print()
 
 
